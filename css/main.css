@@ -111,7 +111,7 @@ html {
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	
 }
 
@@ -153,20 +153,57 @@ body {
 
 .subhead  p#callout {
 	position: absolute;
-	bottom: 80px;
-	left: 9.5em;
+	bottom: 3em;
+	left: 8em;
 	color: white;
-	font-size: 25px;
+	font-size: 1.20em;
 	font-weight: normal;
 	border: 2px solid white;
-	padding: 15px 25px;
+	padding: 0.5em 1em;
 }
 
+.about {
+	padding: 1.25em;
+	border-bottom: 1px solid #CCC;
+}
 
+.projects {
+	padding: 1.25em;
+}
 
+img {
+	max-width: 100%;
+	opacity: 0.2;
+	
+}
 
+article {
+	float: left;
+	clear: right;
+	width: 50%;
+}
 
+.container {
+	position: relative;
+}
 
+.bgimage{
+	display: block;
+	position: relative;
+	z-index: -10;
+}
+
+.text_overlay {
+	color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+footer {
+	clear: both;
+}
 
 
 
