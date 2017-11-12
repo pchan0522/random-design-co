@@ -131,36 +131,53 @@ body {
 	float: right;
 }
 
-.subhead div{
-	background-image: url(../img/purple-bg.jpeg);
-	height: 30em;
-	overflow:hidden;
-	margin: 0;
-	position: relative;
+img {
+  max-width: 100%;
 }
 
-.subhead #tagline {
-	color: white;
-	font-size: 4em;
-	font-weight: bold;
-	position: absolute;
-	top: 1em;
-	left: 2.8em;
-	line-height:1em;
-	width: 45%;
-	text-align: center;
+.fullbleed_container {
+  position: relative;
+}
+
+.fullbleedimg{
+	display: block;
+	position: relative;
+	z-index: -10;
+	width: 100%;
+}
+
+.fullbleed_overlay {
+  font-size:2em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.text1{
+	margin: 0;
+  position: absolute;
+	transform: translate(-50%, -50%);
+	top: 37%;
+	left: 50%;
+	font-size: 2em;
 	
 }
+.text2 {
+	margin:0;
+  position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	font-size: 2em;
+}
 
-.subhead  p#callout {
-	position: absolute;
-	bottom: 4em;
-	left: 10em;
-	color: white;
-	font-size: 1.5em;
-	font-weight: normal;
-	border: 2px solid white;
-	padding: 0.5em 1em;
+.callout {
+  border: 2px solid white;
+  padding: 0.5em 1em;
+  position: absolute;
+  left: 37%;
+  top: 60%;
+  font-size: 0.8em;
+  font-weight:normal;
 }
 
 .about {
@@ -173,9 +190,7 @@ body {
 	overflow:hidden;
 }
 
-
-img {
-	max-width: 100%;
+.projects img {
 	opacity: 0.2;
 	
 }
@@ -192,7 +207,7 @@ article {
 	position: relative;
 }
 
-.bgimage{
+.bgimg{
 	display: block;
 	position: relative;
 	z-index: -10;
