@@ -124,17 +124,16 @@ a {
 
 .pageheader ul {
 	list-style: none;
-	
 }
 
 .pageheader li {
 	float: right;
-	margin-right: 10em;
 }
 
 .pageheader li a {
 	display: block;
 	color: white;
+	padding: 0.2em;
 }
 
 .pageheader li a:hover {
@@ -146,10 +145,19 @@ a {
 .pageheader li ul {
 	display: none;
 	position: absolute;
+	right: 0;
+	padding: 0;
 }
 
 .pageheader li:hover ul {
 	display: block;
+}
+
+.pageheader li li {
+	float: none;
+	padding: 1em;
+	background: #ccc;
+	border: 1px solid white;
 }
 
 
