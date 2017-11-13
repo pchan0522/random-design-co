@@ -105,15 +105,16 @@ html {
   box-sizing: inherit;
 }
 
-html {
-	max-width: 660px;
-	margin: auto;
-}
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	
 }
+
+a {
+	text-decoration: none;
+}
+
 
 .pageheader {
 	background-color: black;
@@ -121,15 +122,43 @@ body {
 	padding: 1.25em;
 }
 
+.pageheader ul {
+	list-style: none;
+	
+}
+
+.pageheader li {
+	float: right;
+	margin-right: 10em;
+}
+
+.pageheader li a {
+	display: block;
+	color: white;
+}
+
+.pageheader li a:hover {
+	color: white;
+	background-color: #ccc;
+	text-decoration: none;
+}
+
+.pageheader li ul {
+	display: none;
+	position: absolute;
+}
+
+.pageheader li:hover ul {
+	display: block;
+}
+
+
 .pageheader h1 {
 	margin: 0;
 	font-size: 1.25em;
 	overflow: hidden;
 }
 
-.pageheader .fa-bars {
-	float: right;
-}
 
 img {
   max-width: 100%;
@@ -159,18 +188,24 @@ img {
 	text-align:center;
 }
 
-.callout {
+.button {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	top: 70%;
 	left: 50%;
 	margin:0;
-	color: #fff;
 	border: 2px solid white;
 	padding: 0.5em 1em;
 	font-size: 1.5em;
-	
+	color: white;
+	background: transparent;
 }
+
+.button:hover {
+	color: black;
+	background-color: white;
+}
+
 
 
 .about {
@@ -183,10 +218,6 @@ img {
 	overflow:hidden;
 }
 
-.projects img {
-	opacity: 0.2;
-	
-}
 
 article {
 	float: left;
@@ -198,7 +229,17 @@ article {
 
 .container {
 	position: relative;
+
 }
+
+.imgstyle {
+	opacity:0.2;
+}
+
+.imgstyle:hover {
+	opacity:1;
+}
+
 
 .bgimg{
 	display: block;
@@ -206,8 +247,11 @@ article {
 	z-index: -10;
 }
 
+.projects a {
+	color: black;
+}
+
 .text_overlay {
-	color: #000;
 	text-transform: uppercase;
 	position: absolute;
 	top: 50%;
